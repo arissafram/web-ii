@@ -1,14 +1,17 @@
 window.addEventListener("load", () => {
-  let car1Pos = 0;
-  let car2Pos = 0;
-  let gameOver = false;
+  // Race car game
+  const raceCarGame = document.querySelector("#race-car-game");
 
   const car1 = document.querySelector("#car1");
   const car2 = document.querySelector("#car2");
   const winnerText = document.querySelector("#winner");
   const finishLine = document.querySelector("#finish");
 
-  document.addEventListener("keydown", (event) => {
+  let car1Pos = 0;
+  let car2Pos = 0;
+  let gameOver = false;
+
+  raceCarGame.addEventListener("keydown", (event) => {
     if (gameOver) return;
 
     const key = event.key.toLowerCase();
@@ -33,4 +36,28 @@ window.addEventListener("load", () => {
       gameOver = true;
     }
   });
+
+  // Bouncing ball game
+  let score = 0;
+  let ballGameOver = false;
+  const ball = document.querySelector("#ball");
+  const ballArea = document.querySelector("#ball-area");
+  const scoreText = document.querySelector(".score");
+  const ballMessage = document.querySelector("#ball-message");
+
+  ball.onclick = (event) => {
+    event.stopPropagation();
+    if (ballGameOver) return;
+    score++;
+    scoreText.innerText = "Score: " + score;
+  };
+
+  ballArea.onclick = () => {
+    if (ballGameOver) return;
+    ballMessage.innerText = "You missed the ball! Game over.";
+    score = 0;
+    ballGameOver = true;
+    ball.style.animationPlayState = "paused";
+    ball.style.cursor = "default";
+  };
 });

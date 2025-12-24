@@ -16,6 +16,9 @@
 
 .instructions {
   font-size: 14px;
-  /* font-weight: 600; */
   margin-bottom: 6px;
+}
+
+.game-area {
+  margin-top: 20px;
 }

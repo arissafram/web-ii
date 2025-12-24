@@ -7,21 +7,38 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="race-car.css" />
+    <link rel="stylesheet" href="styles/race-car.css" />
+    <link rel="stylesheet" href="styles/bouncing-ball.css" />
   </head>
   <body>
-    <h1>Demo games</h1>
-    <div class="game-container race-car-game">
+    <!-- race car game -->
+    <div id="race-car-game" class="game-container race-car-game" tabindex="0">
       <h2 class="title">Race car game</h2>
       <p class="instructions">Player 1: press 'X' key</p>
       <p class="instructions">Player 2: press 'right arrow' key</p>
-      <div id="track">
+      <div id="track" class="game-area">
         <div id="start"></div>
         <div id="car1">🚗</div>
         <div id="car2">🏎️</div>
         <div id="finish"></div>
       </div>
       <p id="winner"></p>
+    </div>
+
+    <!-- bouncing ball game -->
+    <div
+      id="bouncing-ball-game"
+      class="game-container bouncing-ball-game"
+      tabindex="0"
+    >
+      <h2 class="title">Bouncing ball game</h2>
+      <p class="instructions">Press 'space' key to start the game</p>
+      <p class="score">Score: 0</p>
+      <div id="ball-area" class="game-area">
+        <div id="ball"></div>
+        <p id="ball-message"></p>
+      </div>
+      </div>
     </div>
   </body>
 </html>
