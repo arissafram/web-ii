@@ -5,6 +5,5 @@
 - rock paper scissors against the computer
 - tic tac toe without game logic
 - matching game without shuffle
-
 - farm animals
 - chaos buttons
