@@ -25,6 +25,28 @@ window.addEventListener("load", () => {
     }
   };
 
+  // Silly farm game
+  const duckSound = new Audio("");
+  const horseSound = new Audio("");
+  const cowSound = new Audio("");
+  const pigSound = new Audio("");
+
+  document.querySelector("#duck").onclick = () => {
+    duckSound.play();
+  };
+
+  document.querySelector("#horse").onclick = () => {
+    horseSound.play();
+  };
+
+  document.querySelector("#cow").onclick = () => {
+    cowSound.play();
+  };
+
+  document.querySelector("#pig").onclick = () => {
+    pigSound.play();
+  };
+
   // Race car game
   const raceCarGame = document.querySelector("#race-car-game");
 
