@@ -6,9 +6,22 @@
     <title>Document</title>
     <script src="index.js"></script>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="race-car.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1>Demo games</h1>
+    <div class="game-container race-car-game">
+      <h2 class="title">Race car game</h2>
+      <p class="instructions">Player 1: press 'X' key</p>
+      <p class="instructions">Player 2: press 'right arrow' key</p>
+      <div id="track">
+        <div id="start"></div>
+        <div id="car1">🚗</div>
+        <div id="car2">🏎️</div>
+        <div id="finish"></div>
+      </div>
+      <p id="winner"></p>
+    </div>
   </body>
 </html>
