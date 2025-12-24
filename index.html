@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/matching-game.css" />
     <link rel="stylesheet" href="styles/mystery-button.css" />
     <link rel="stylesheet" href="styles/silly-farm.css" />
+    <link rel="stylesheet" href="styles/whack-a-mole.css" />
   </head>
   <body>
     <!-- mystery button game -->
@@ -48,6 +49,20 @@
         <div id="finish"></div>
       </div>
       <p id="winner"></p>
+    </div>
+
+    <!-- whack a mole game -->
+    <div id="whack-a-mole-game" class="game-container">
+      <h2 class="title">Whack-a-Mole</h2>
+      <p class="instructions">Click the moles to score!</p>
+      <p id="mole-score">Score: 0</p>
+      <div id="mole-field">
+        <div class="hole"><span class="mole mole1">🐹</span></div>
+        <div class="hole"><span class="mole mole2">🐹</span></div>
+        <div class="hole"><span class="mole mole3">🐹</span></div>
+        <div class="hole"><span class="mole mole4">🐹</span></div>
+        <p id="mole-message"></p>
+      </div>
     </div>
 
     <!-- rock paper scissors game -->
