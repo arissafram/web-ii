@@ -1,0 +1,75 @@
+#mole-field {
+  width: 400px;
+  height: 150px;
+  background: #8b4513;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+
+.hole {
+  width: 60px;
+  height: 60px;
+  background: #3d2314;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mole {
+  font-size: 40px;
+  cursor: pointer;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.mole1 {
+  animation: pop 1.2s infinite;
+}
+
+.mole2 {
+  animation: pop 0.9s infinite;
+  animation-delay: 0.3s;
+}
+
+.mole3 {
+  animation: pop 1.5s infinite;
+  animation-delay: 0.6s;
+}
+
+.mole4 {
+  animation: pop 0.7s infinite;
+  animation-delay: 0.2s;
+}
+
+@keyframes pop {
+  0%,
+  40%,
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  50%,
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#mole-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+}

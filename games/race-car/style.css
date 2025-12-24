@@ -1,0 +1,42 @@
+#track {
+  position: relative;
+  height: 120px;
+  background-color: darkgrey;
+  padding: 10px;
+}
+
+#car1,
+#car2 {
+  position: absolute;
+  font-size: 32px;
+  left: 10px;
+  transform: scaleX(-1);
+}
+
+#car2 {
+  top: 60px;
+}
+
+#finish {
+  position: absolute;
+  right: 60px;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: red;
+}
+
+#start {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background: rgb(28, 27, 27);
+}
+
+#winner {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}

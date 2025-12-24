@@ -4,11 +4,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="index.js"></script>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="games/mystery-button/style.css" />
+    <link rel="stylesheet" href="games/silly-farm/style.css" />
+    <link rel="stylesheet" href="games/race-car/style.css" />
+    <link rel="stylesheet" href="games/whack-a-mole/style.css" />
+    <link rel="stylesheet" href="games/rock-paper-scissors/style.css" />
+    <link rel="stylesheet" href="games/tic-tac-toe/style.css" />
+    <link rel="stylesheet" href="games/matching-game/style.css" />
+    <link rel="stylesheet" href="games/bouncing-ball/style.css" />
+    <script src="games/mystery-button/index.js"></script>
+    <script src="games/silly-farm/index.js"></script>
+    <script src="games/race-car/index.js"></script>
+    <script src="games/whack-a-mole/index.js"></script>
+    <script src="games/rock-paper-scissors/index.js"></script>
+    <script src="games/tic-tac-toe/index.js"></script>
+    <script src="games/matching-game/index.js"></script>
+    <script src="games/bouncing-ball/index.js"></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- mystery button game -->
+    <div id="mystery-button-game" class="game-container">
+      <h2 class="title">Mystery Button</h2>
+      <p class="instructions">Click me to see what I can do!</p>
+      <div id="mystery-area">
+        <button id="mystery-button">Click me</button>
+      </div>
+    </div>
+
+    <!-- silly farm game -->
+    <!-- <div id="silly-farm-game" class="game-container">
+      <h2 class="title">Silly Farm</h2>
+      <p class="instructions">Click an animal to hear its sound!</p>
+      <div id="farm">
+        <span id="duck" class="animal">🦆</span>
+        <span id="horse" class="animal">🐴</span>
+        <span id="cow" class="animal">🐄</span>
+        <span id="pig" class="animal">🐷</span>
+      </div>
+    </div> -->
+
+    <!-- race car game -->
+    <div id="race-car-game" class="game-container race-car-game" tabindex="0">
+      <h2 class="title">Race car game</h2>
+      <p class="instructions">Player 1: press 'X' key</p>
+      <p class="instructions">Player 2: press 'right arrow' key</p>
+      <div id="track" class="game-area">
+        <div id="start"></div>
+        <div id="car1">🚗</div>
+        <div id="car2">🏎️</div>
+        <div id="finish"></div>
+      </div>
+      <p id="winner"></p>
+    </div>
+
+    <!-- whack a mole game -->
+    <!-- <div id="whack-a-mole-game" class="game-container">
+      <h2 class="title">Whack-a-Mole</h2>
+      <p class="instructions">Click the moles to score!</p>
+      <p id="mole-score">Score: 0</p>
+      <div id="mole-field">
+        <div class="hole"><span class="mole mole1">🐹</span></div>
+        <div class="hole"><span class="mole mole2">🐹</span></div>
+        <div class="hole"><span class="mole mole3">🐹</span></div>
+        <div class="hole"><span class="mole mole4">🐹</span></div>
+        <p id="mole-message"></p>
+      </div>
+    </div> -->
+
+    <!-- rock paper scissors game -->
+    <div id="rock-paper-scissors-game" class="game-container rock-paper-scissors-game" tabindex="0">
+      <h2 class="title">Rock paper scissors game</h2>
+      <p class="instructions">Click on the rock, paper, or scissors button to play</p>
+      <div id="rock-paper-scissors-area" class="game-area">
+        <button id="rock">🪨 Rock</button>
+        <button id="paper">📄 Paper</button>
+        <button id="scissors">✂️ Scissors</button>
+      </div>
+      <p id="result"></p>
+    </div>
+
+    <!-- tic tac toe game -->
+    <div id="tic-tac-toe-game" class="game-container">
+      <h2 class="title">Tic Tac Toe</h2>
+      <p id="turn">Current player: X</p>
+      <div id="board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+
+    <!-- matching game -->
+    <div id="matching-game" class="game-container">
+      <h2 class="title">Matching Game</h2>
+      <p class="instructions">Click cards to find matching pairs</p>
+      <div id="cards">
+        <div class="card" data-value="🍎"></div>
+        <div class="card" data-value="🍊"></div>
+        <div class="card" data-value="🍋"></div>
+        <div class="card" data-value="🍎"></div>
+        <div class="card" data-value="🍊"></div>
+        <div class="card" data-value="🍋"></div>
+      </div>
+    </div>
+
+    <!-- bouncing ball game -->
+    <div
+      id="bouncing-ball-game"
+      class="game-container bouncing-ball-game"
+      tabindex="0"
+    >
+      <h2 class="title">Bouncing ball game</h2>
+      <p class="instructions">Press 'space' key to start the game</p>
+      <p class="score">Score: 0</p>
+      <div id="ball-area" class="game-area">
+        <div id="ball"></div>
+        <p id="ball-message"></p>
+      </div>
+      </div>
+    </div>
   </body>
 </html>
