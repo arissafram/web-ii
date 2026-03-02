@@ -1,6 +1,10 @@
 # Camp Game Examples
 
-Have the opportunity to introduce middle and high school students to javascript. This repo includes some barebones, broken, and unfinished mini games that will help inform the intro to javascript curriculum.
+I have the opportunity to introduce middle and high school students to javascript through games. This repo includes some barebones, broken, and unfinished mini games that will help inform the intro to javascript curriculum. These games were scrapped together without the help of AI to ensure that I could teach students with no coding background to build something fun. When the course fills and I have better understanding of the makeup of the class, I'll flesh these out and build learning tools.
+
+## Camp 
+https://www.kingswoodoxford.org/camp-ko/arts-and-academic-camps/
+INTERACTIVE WEB APPS & GAMES
 
 ## Games
 
